@@ -1,1 +1,30 @@
 /* Denna fil skall innehålla din CSS kod */
+#wrapper {
+    display: grid;
+    grid-template-areas: none;
+}
+
+header {
+    grid-area: hd;
+}
+
+nav {
+    grid-area: nv;
+}
+
+main {
+    grid-area: mn;
+}
+
+section {
+    grid-area: sc;
+    display: flex;
+}
+
+aside {
+    grid-area: as;
+}
+
+footer {
+    grid-area: ft;
+}
