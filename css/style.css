@@ -1,24 +1,73 @@
 /* Denna fil skall innehålla din CSS kod */
 #wrapper {
     display: grid;
-    grid-template-areas: none;
+    grid-template-areas: 
+    "hd hd"
+    "nv nv"
+    "as mn"
+    "as mn"
+    "at at"
+    "sc sc"
+    "ft ft"
+    ;
+    grid-template-columns: 1fr 2fr;
+    margin: auto;
+    width: 95vw;
+}
+
+body {
+    background-color: #b58b63;
+}
+
+header, nav, main, article, section, aside, footer {
+    justify-self: center;
+    background-color: #a5b58d;
+    margin: 5px;
+    border: 5px, brown;
+    border-radius: 10px;
 }
 
 header {
+    display: flex;
     grid-area: hd;
+    width: 40vw;
+    justify-items: space-around;
+    background-color: #f6efe8;
 }
 
 nav {
     grid-area: nv;
+    display: flex;
+    width: 40vw;
+    height: 5vh;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
 }
 
 main {
     grid-area: mn;
+    background-image:url("img/coffebeans.jpg");
+}
+
+article {
+    grid-area: at;
 }
 
 section {
     grid-area: sc;
     display: flex;
+    width: 80vw;
+}
+
+#bread {
+    width: 20vw;
+    height: auto;
+}
+
+#beans {
+    height: 40vh;
+    width: auto;
 }
 
 aside {
