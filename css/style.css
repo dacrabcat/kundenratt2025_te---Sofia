@@ -12,7 +12,7 @@
     ;
     grid-template-columns: 1fr 2fr;
     margin: auto;
-    width: 95vw;
+    width: 90vw;
 }
 
 body {
@@ -23,22 +23,24 @@ header, nav, main, article, section, aside, footer {
     justify-self: center;
     background-color: #a5b58d;
     margin: 5px;
-    border: 5px, brown;
     border-radius: 10px;
+    border-style: solid, ;
+    border-width: 5px,
 }
 
 header {
-    display: flex;
+    display: flex;  
     grid-area: hd;
-    width: 40vw;
+    width: 90vw;
     justify-items: space-around;
     background-color: #f6efe8;
+     justify-items: center;
 }
 
 nav {
     grid-area: nv;
     display: flex;
-    width: 40vw;
+    width: 90vw;
     height: 5vh;
     justify-content: space-around;
     text-align: center;
@@ -47,17 +49,26 @@ nav {
 
 main {
     grid-area: mn;
-    background-image:url("img/coffebeans.jpg");
+    background-image:url("../img/coffebeans.jpg");
+    justify-self: stretch;
+    align-content: center;
+    min-height: 50vh;
+    color: #f6efe8;
+    text-align: center;
 }
 
 article {
     grid-area: at;
+    margin: 30px;
+    width: 80vw;
+    text-align: center;
 }
 
-section {
+#scmain {
     grid-area: sc;
     display: flex;
     width: 80vw;
+    flex-wrap: wrap;
 }
 
 #bread {
@@ -72,8 +83,79 @@ section {
 
 aside {
     grid-area: as;
+    width: 20vw
 }
 
 footer {
     grid-area: ft;
+}
+
+
+#aboutus-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "hd hd"
+    "nv nv"
+    "asc img"
+    "at at"
+    "bsc bsc"
+    ;
+    width: 90vw;
+    margin: auto;
+}
+
+#abtussc {
+    grid-area: asc;
+    justify-self: center;
+    min-width: 40vw;
+}
+
+
+#bread2 {
+    grid-area: img;
+    width: 40vw;
+    justify-self: center;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#personal {
+    grid-area:bsc;
+    width: 90vw;
+    display: flex;
+    flex: wrap;
+}
+
+
+#wrapper {
+    margin: auto;
+    width: 90vw;
+    display: grid;
+    grid-template-areas: 
+    "hd hd hd"
+    "nv nv nv"
+    "bak dry mat"
+    ;
+
+}
+
+#bakverk {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: bak;
+    width: 30vw;
+}
+
+#dryck {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: dry;
+    width: 30vw;
+}
+
+#småmat {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: mat;
+    width: 30vw;
 }
