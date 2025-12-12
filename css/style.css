@@ -1,5 +1,5 @@
 /* Denna fil skall innehålla din CSS kod */
-#wrapper {
+#mainwrapper {
     display: grid;
     grid-template-areas: 
     "hd hd"
@@ -88,6 +88,8 @@ aside {
 
 footer {
     grid-area: ft;
+    width: 90vw;
+    height: 30vh;
 }
 
 
@@ -127,7 +129,7 @@ footer {
 }
 
 
-#wrapper {
+#menuwrapper {
     margin: auto;
     width: 90vw;
     display: grid;
@@ -136,26 +138,51 @@ footer {
     "nv nv nv"
     "bak dry mat"
     ;
-
 }
 
-#bakverk {
+#bakverk, #dryck, #mat {
     display: flex;
     flex-wrap: wrap;
+    width: 28vw;
+    justify-content: center;
+}
+
+#bakverk{
     grid-area: bak;
-    width: 30vw;
 }
 
 #dryck {
-    display: flex;
-    flex-wrap: wrap;
     grid-area: dry;
-    width: 30vw;
 }
 
-#småmat {
-    display: flex;
-    flex-wrap: wrap;
+#mat {
     grid-area: mat;
-    width: 30vw;
+}
+
+#bakverk article, #dryck article, #mat article, #art1, #art2, #art3 {
+    display: flex;
+    width: 80%;
+    background-color: #f6efe8;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menuhd {
+    font-size: 2rem;
+}
+
+#dryck article h4, #bakverk article h4, #mat article h4{
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+#bakverk article img{
+    width: 40%; 
+    height: auto;
+}
+
+#coffee {
+    width: 10vw;
+    height: auto;
 }
