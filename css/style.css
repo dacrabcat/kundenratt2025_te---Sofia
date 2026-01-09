@@ -4,24 +4,22 @@
     grid-template-areas: 
     "hd hd"
     "nv nv"
-    "as mn"
-    "as mn"
+    "mn mn"
     "at at"
     "sc sc"
     "ft ft"
     ;
-    grid-template-columns: 1fr 2fr;
     margin: auto;
     width: 90vw;
 }
 
 body {
-    background-color: #b58b63;
+    background-color: #a5b58d;
 }
 
 header, nav, main, article, section, aside, footer {
     justify-self: center;
-    background-color: #a5b58d;
+    background-color: #f6efe8;
     margin: 5px;
     border-radius: 10px;
     border-style: solid, ;
@@ -32,9 +30,25 @@ header {
     display: flex;  
     grid-area: hd;
     width: 90vw;
-    justify-items: space-around;
+    justify-content: space-around;
     background-color: #f6efe8;
-     justify-items: center;
+}
+
+header h1 {
+    width:30vw;
+}
+
+#h11 {
+    text-align: right;
+}
+
+#h12 {
+    text-align: start;
+}
+
+#logga {
+    height:10vh;
+    justify-self: center;
 }
 
 nav {
@@ -53,6 +67,8 @@ main {
     justify-self: stretch;
     align-content: center;
     min-height: 50vh;
+    width: 70vw;
+    justify-self: center;
     color: #f6efe8;
     text-align: center;
 }
@@ -62,12 +78,13 @@ article {
     margin: 30px;
     width: 80vw;
     text-align: center;
+    text-size-adjust: 2rem;
 }
 
 #scmain {
     grid-area: sc;
     display: flex;
-    width: 80vw;
+    width: 70vw;
     flex-wrap: wrap;
 }
 
@@ -87,10 +104,36 @@ aside {
 }
 
 footer {
+    display: flex;
+    flex-wrap: wrap;
     grid-area: ft;
     width: 90vw;
-    height: 30vh;
+    height: auto;
+    justify-content: space-around;
+    padding: 5px;
+    align-items: center;
 }
+
+footer ul {
+    background-color: #b58b63;
+    width: 25vw;
+    height: auto;
+    text-align: center;
+    justify-items: center;
+    padding: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+footer li {
+    margin: 5px;
+}
+
+#karta {
+    border-radius: 10px;
+    border: solid, #f6efe8, 2px;
+}
+
 
 
 #aboutus-wrapper {
@@ -110,6 +153,7 @@ footer {
     grid-area: asc;
     justify-self: center;
     min-width: 40vw;
+    text-align: center;
 }
 
 
@@ -128,6 +172,10 @@ footer {
     flex: wrap;
 }
 
+#art1, #art2, #art3 {
+    flex-direction: column;
+    background-color: #b58b63;
+}
 
 #menuwrapper {
     margin: auto;
@@ -137,6 +185,7 @@ footer {
     "hd hd hd"
     "nv nv nv"
     "bak dry mat"
+    "key key key"
     ;
 }
 
@@ -145,6 +194,7 @@ footer {
     flex-wrap: wrap;
     width: 28vw;
     justify-content: center;
+    background-color: #f6efe8;
 }
 
 #bakverk{
@@ -162,14 +212,23 @@ footer {
 #bakverk article, #dryck article, #mat article, #art1, #art2, #art3 {
     display: flex;
     width: 80%;
-    background-color: #f6efe8;
+    height: 35vh;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding: 10px;
 }
 
 .menuhd {
     font-size: 2rem;
+}
+
+.menuitem {
+    height: 10vw;
+    width: auto;
+}
+
+.menutext {
+text-align: center;
 }
 
 #dryck article h4, #bakverk article h4, #mat article h4{
@@ -182,7 +241,28 @@ footer {
     height: auto;
 }
 
-#coffee {
-    width: 10vw;
-    height: auto;
+#key {
+grid-area: key;
+width: 60vw;
+}
+
+#key h3 {
+width: 60vw;
+text-align: center;
+}
+
+.gluten {
+    background-color: rgb(147, 177, 233);
+}
+
+.laktos {
+    background-color: rgb(210, 210, 132);
+}
+
+.vegansk {
+    background-color: #81b481;
+}
+
+.rest {
+    background-color: #b58b63;
 }
